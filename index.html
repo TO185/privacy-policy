@@ -1,226 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy</title>
-
-  <!-- Standalone single-file HTML (no external imports) -->
   <style>
-    :root{
-      --bg:#f6f8fb;
-      --card:#ffffff;
-      --muted:#6b7280;
-      --accent:#2563eb;
-      --accent-2:#06b6d4;
-      --highlight:#eef6ff;
-      --contact:#fff7ed;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+      max-width: 800px;
     }
-    *{box-sizing: border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-      background:
-        radial-gradient(1000px 400px at -10% 10%, rgba(37,99,235,0.06), transparent 8%),
-        radial-gradient(800px 300px at 110% 90%, rgba(6,182,212,0.04), transparent 8%),
-        var(--bg);
-      color:#0f172a;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:28px;
+    h1, h2 {
+      color: #333;
     }
-
-    .card{
-      width:100%;
-      max-width:920px;
-      background:var(--card);
-      border-radius:14px;
-      box-shadow: 0 10px 30px rgba(15,23,42,0.08);
-      overflow:hidden;
-      transform-origin:center;
-      animation:pop .38s cubic-bezier(.2,.9,.3,1);
+    .meta {
+      margin-bottom: 15px;
     }
-
-    @keyframes pop{
-      from{opacity:0; transform: translateY(8px) scale(.998)}
-      to{opacity:1; transform: translateY(0) scale(1)}
+    .chip {
+      display: inline-block;
+      background: #007BFF;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 5px;
+      font-size: 14px;
     }
-
-    header{
-      padding:28px 28px;
-      background:linear-gradient(90deg,var(--accent),var(--accent-2));
-      color:white;
-      display:flex;
-      gap:18px;
-      align-items:center;
-    }
-    .logo{
-      width:56px;
-      height:56px;
-      border-radius:10px;
-      background:rgba(255,255,255,0.12);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-weight:700;
-      font-size:18px;
-      letter-spacing:0.4px;
-      box-shadow: inset 0 -6px 18px rgba(255,255,255,0.03);
-    }
-    header h1{
-      margin:0;
-      font-size:20px;
-      line-height:1;
-    }
-    header p{margin:0; opacity:.95; font-size:13px; color:rgba(255,255,255,0.9)}
-
-    main{
-      padding:28px;
-      display:grid;
-      gap:18px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.98));
-    }
-
-    .meta{
-      display:flex;
-      gap:12px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-    .chip{
-      background:var(--highlight);
-      color:var(--accent);
-      padding:8px 12px;
-      border-radius:999px;
-      font-weight:600;
-      font-size:13px;
-      border-left:3px solid rgba(37,99,235,0.12);
-    }
-
-    h2{
-      margin:0;
-      font-size:16px;
-      color:#0b1220;
-    }
-    p{margin:0; color:var(--muted); font-size:15px; line-height:1.7}
-
-    .section{
-      padding:14px 12px;
-      border-radius:10px;
-      background:linear-gradient(180deg, #fff, #fbfdff);
-      border:1px solid rgba(15,23,42,0.03);
-    }
-
-    .highlight-block{
-      background:linear-gradient(90deg, rgba(240,247,255,0.9), rgba(241,249,255,0.95));
-      border-left:4px solid rgba(37,99,235,0.18);
-      padding:12px;
-      border-radius:8px;
-      color:#08306b;
-      font-weight:600;
-    }
-
-    .contact{
-      background:var(--contact);
-      border-left:4px solid rgba(245,158,11,0.18);
-      padding:12px;
-      border-radius:8px;
-      color:#92400e;
-      font-weight:600;
-    }
-
-    footer{
-      padding:18px 28px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:12px;
-      border-top:1px solid rgba(15,23,42,0.03);
-      background:transparent;
-      font-size:13px;
-      color:var(--muted);
-    }
-
-    a.mail{
-      color:var(--accent);
-      text-decoration:none;
-      font-weight:700;
-    }
-
-    /* Responsive */
-    @media (max-width:720px){
-      body{padding:18px}
-      header{padding:18px}
-      main{padding:18px}
-      .logo{width:48px;height:48px}
+    ul {
+      margin-top: 8px;
     }
   </style>
 </head>
 <body>
-  <div class="card" role="main" aria-labelledby="pp-title">
-    <header>
-      <div class="logo" aria-hidden="true">PS</div>
-      <div>
-        <h1 id="pp-title">Privacy Policy</h1>
-        <p>Effective Date: August 6, 2025</p>
-      </div>
-    </header>
+  <h1>Privacy Policy</h1>
 
-    <main>
-      <div class="meta">
-        <div class="chip">Applies to: All mobile apps</div>
-        <div style="color:var(--muted);font-size:13px">No registration • No tracking • Kid friendly</div>
-      </div>
+  <div class="meta">
+    <div class="chip">Applies to:</div>
+    <div style="color:#555;font-size:14px">
+      Tic Tac Toe • Color Gradient Puzzle • Sudoku
+    </div>
+  </div>
 
-      <div class="section" aria-labelledby="intro-heading">
-        <h2 id="intro-heading">Introduction</h2>
-        <p>This Privacy Policy applies to all mobile applications developed and published by us. We are committed to protecting your privacy and ensuring a safe, simple experience for all users.</p>
-      </div>
+  <div class="section">
+    <h2>Apps Covered by This Privacy Policy</h2>
+    <ul>
+      <li>Tic Tac Toe</li>
+      <li>Color Gradient Puzzle</li>
+      <li>sudoku</li>
+    </ul>
+  </div>
 
-      <div class="section" aria-labelledby="not-collect-heading">
-        <h2 id="not-collect-heading">What Information We Do <em>NOT</em> Collect</h2>
-        <div class="highlight-block" style="margin-top:10px">
-          We do NOT collect, store, or share any personal or sensitive user data. Our apps do not require registration, login, or submission of personal information.
-        </div>
-      </div>
+  <div class="section">
+    <h2>Information We Collect</h2>
+    <p>We do not collect any personal information from users. Our apps are designed to be safe, kid-friendly, and free from tracking or analytics tools.</p>
+  </div>
 
-      <div class="section" aria-labelledby="permissions-heading">
-        <h2 id="permissions-heading">Permissions</h2>
-        <p>Some apps may request basic permissions (e.g., storage or internet access) strictly to enable core functionality. These permissions are not used to collect or transmit personal data.</p>
-      </div>
+  <div class="section">
+    <h2>How We Use Information</h2>
+    <p>Since we do not collect any personal data, there is no usage of personal information in our apps.</p>
+  </div>
 
-      <div class="section" aria-labelledby="thirdparty-heading">
-        <h2 id="thirdparty-heading">Third-Party Services</h2>
-        <p>We do not use third-party advertising, analytics, or tracking technologies. No user behavior or device data is shared externally.</p>
-      </div>
+  <div class="section">
+    <h2>Third-Party Services</h2>
+    <p>Our apps do not integrate with third-party services that collect user data.</p>
+  </div>
 
-      <div class="section" aria-labelledby="children-heading">
-        <h2 id="children-heading">Children's Privacy</h2>
-        <p>Our apps are safe for users of all ages. We do not knowingly collect data from children under the age of 13.</p>
-      </div>
+  <div class="section">
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. Changes will be posted on this page with the updated date.</p>
+  </div>
 
-      <div class="section" aria-labelledby="changes-heading">
-        <h2 id="changes-heading">Changes to This Policy</h2>
-        <p>We may update this Privacy Policy occasionally. Any changes will be posted here with a revised effective date.</p>
-      </div>
-
-      <div class="section" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact</h2>
-        <div class="contact" style="margin-top:10px">
-          If you have questions or concerns, contact us at:
-          <div style="margin-top:8px"><a class="mail" href="mailto:toufikshaikh185@gmail.com">toufikshaikh185@gmail.com</a></div>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div>&copy; 2025 Toufik Shaikh</div>
-      <div style="opacity:.9">Privacy &mdash; Simple & Transparent</div>
-    </footer>
+  <div class="section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at: <strong>your-toufikshaikh185@gmail.com</strong></p>
   </div>
 </body>
 </html>
